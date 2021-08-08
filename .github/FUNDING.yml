@@ -1,0 +1,12 @@
+# Ini adalah platform model pendanaan yang didukung
+
+github: # Ganti dengan hingga 4 nama pengguna yang mendukung GitHub Sponsor misalnya, [user1, user2]
+patreon: thehackingsage # Ganti dengan satu nama pengguna Patreon
+open_collective: # Ganti dengan satu nama pengguna Open Collective
+ko_fi: # Ganti dengan satu nama pengguna Ko-fi
+tidelift: # Ganti dengan satu nama platform/nama paket Tidelift misalnya, npm/babel
+community_bridge: # Ganti dengan satu nama proyek Community Bridge misalnya, cloud-foundry
+liberapay: # Ganti dengan satu nama pengguna Liberapay
+issuehunt: # Ganti dengan satu nama pengguna IssueHunt
+otechie: # Ganti dengan satu nama pengguna Otechie
+kustom: ['https://paypal.me/thehackingsage'] # Ganti dengan maksimal 4 URL sponsor kustom misalnya, ['link1', 'link2']
