@@ -166,8 +166,8 @@ TBHM3, GitHub, Forum Bug Bounty, Google dan Beberapa Artikel Berburu Bug.
 
 Itu saja... Jika Anda Suka Repo Ini. Mohon bagikan ini dengan teman-teman..
 
-& Jangan Lupa Ikuti Saya Di [Instagram](-)
-& SUBSCRIBE Saluran [YouTube](-) Saya..!!!
+& Jangan Lupa Ikuti Saya Di [Instagram](https://instagram.com/venom_cyber_security?utm_medium=copy_link)
+& SUBSCRIBE Saluran [YouTube](https://youtube.com/channel/UCxoJAzVIWX6bz3HE8nHyVGQ) Saya..!!!
 
 ***Terima kasih.***
 ***Selamat Berburu..***
