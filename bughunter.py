@@ -1,6 +1,6 @@
 #!/usr/bin/env python2.7 
 # __________                 ___ ___               __
-# \______   \__ __  ____    /   |   \ __ __  _____/  |_  by Mr. SAGE
+# \______   \__ __  ____    /   |   \ __ __  _____/  |_  Mood By Venom Reyy
 #  |    |  _/  |  \/ ___\  /    ~    \  |  \/    \   __\/ __ \_  __ \
 #  |    |   \  |  / /_/  > \    Y    /  |  /   |  \  | \  ___/|  | \/
 #  |______  /____/\___  /   \___|_  /|____/|___|  /__|  \___  >__|
@@ -53,11 +53,11 @@ no = set(['no', 'n', 'No', 'N'])
 
 def logo():
     print """
-- Powered by Mr. SAGE 
+- Mood by Venom Reyy 
 """
 bughunterlogo = """\033[0m
   __________                 ___ ___               __                 
-  \______   \__ __  ____    /   |   \ __ __  _____/  |_  by Mr. SAGE  
+  \______   \__ __  ____    /   |   \ __ __  _____/  |Mood by Reyy
    |    |  _/  |  \/ ___\  /    ~    \  |  \/    \   __\/ __ \_  __ \ 
    |    |   \  |  / /_/  > \    Y    /  |  /   |  \  | \  ___/|  | \/ 
    |______  /____/\___  /   \___|_  /|____/|___|  /__|  \___  >__|    
@@ -69,18 +69,23 @@ bughunterlogo = """\033[0m
 def menu():
     clearScr()
     print (bughunterlogo + """\033[1m
-  [!] Top Tools for Bug Hunting [!] | https://thehackingsage.github.io
- -----------------------------------------------------------------------
+  [!] Alat Teratas untuk Berburu Bug [!] | Mood Bahasa Indonesia
+ ---------------------------------------------------------------------
 \033[0m
-   [1] - Information Gathering     [update] - Update The BugHunter 
-   [2] - Mapping                    [about] - About The BugHunter  
-   [3] - Discovery                 [whoami] - Your IP and Location 
-   [4] - Exploitation                [sage] - Tools by Mr. SAGE    
-   [5] - P0Cs & Reporting            [exit] - Exit The BugHunter   
+   [1] - Pengumpulan Informasi
+   [2] - Pemetaan
+   [3] - Penemuan
+   [4] - Eksploitasi
+   [5] - P0C & Pelaporan
+   [6] - Perbarui BugHunter
+   [7] - Tentang BugHunter
+   [8] - IP dan Lokasi Anda
+   [9] - New Tools By Venom Reyy
+   [10] - Keluar dari BugHunter
  """)
-    choice = raw_input("   bughunter~# ")
+    choice = raw_input("   Reyy Project~# ")
     os.system('clear')
-    if choice == "update":
+    if choice == "6":
         updatebughunter()
     elif choice == "1":
         info()
@@ -92,41 +97,50 @@ def menu():
         exploit()
     elif choice == "5":
         reporting()
-    elif choice == "about":
+    elif choice == "7":
         about()
-    elif choice == "whoami":
+    elif choice == "8":
         myinfo()
-    elif choice == "sage":
+    elif choice == "9":
         sage()
-    elif choice == "exit":
+    elif choice == "10":
         clearScr(), sys.exit()
     elif choice == "":
         clearScr(), menu()
     else:
         clearScr(), menu()
 
-# Information Gathering #######################################################
+# Pengumpulan Informasi #######################################################
 
 def info():
     clearScr()
     print(bughunterlogo)
     print("""
-    Information Gathering | https://thehackingsage.github.io
+    Pengumpulan Informasi | Mood Bahasa Indonesia
     ----------------------------------------------------------------
     
-     [1] - Basic Commands    [11] - InfoG
-     [2] - Masscan           [12] - The Harvester
-     [3] - DNS Recon         [13] - Recon-NG
-     [4] - Sublist3r         [14] - SetoolKit
-     [5] - Alt-DNS           [15] - WhatWeb
-     [6] - Amass             [16] - Maltego
-     [7] - Subfinder         [17] - Goohak
-     [8] - Enumall           [18] - GoogD0rker
-     [9] - Aquatone          
-    [10] - Cloudflare_Enum    [0] - Useful Links   
+     [0] - Tautan Berguna
+     [1] - Perintah Dasar
+     [2] - Masscan
+     [3] - Pengintaian DNS
+     [4] - Sublist3r
+     [5] - Alt-DNS
+     [6] - Mengumpulkan
+     [7] - Subpenemu
+     [8] - enumall
+     [9] - Aquatone
+    [10] - Cloudflare_Enum
+    [11] - InfoG
+    [12] - Pemanen
+    [13] - Recon-NG
+    [14] - SetoolKit
+    [15] - WhatWeb
+    [16] - Maltego
+    [17] - Goohak
+    [18] - GoogD0rker
     """)
-    print("   [99] - Return to Main Menu \n")
-    choice1 = raw_input("   bughunter~# ")
+    print("   [99] - Kembali ke Menu Utama \n")
+    choice1 = raw_input("   Reyy Project~# ")
     if choice1 == "1":
         clearScr()
         basiccmd()
@@ -194,26 +208,26 @@ def info():
         clearScr()
         info()
 
-# Mapping #####################################################################
+# Pemetaan #####################################################################
 
 def mapping():
     clearScr()
     print(bughunterlogo)
     print("""
-    Mapping | https://thehackingsage.github.io
+    Pemetaan | Mood Bahasa Indonesia
     ----------------------------------------------------------------
     
     [1] - Nmap
     [2] - Firefox
-    [3] - Firefox Extensions
+    [3] - Ekstensi Firefox
     [4] - Burp Suite Pro
-    [5] - Burp Suite Extensions
-    [6] - Intruder Payloads
-    [7] - Payloads All The Thing
-    [8] - Git-all-Secrets
+    [5] - Ekstensi Burp Suite
+    [6] - Muatan Penyusup
+    [7] - Memuat Semua Hal
+    [8] - Git-semua-Rahasia
     """)
-    print("   [99] - Return to Main Menu \n")
-    choice2 = raw_input("   bughunter~# ")
+    print("   [99] - Kembali ke Menu Utama \n")
+    choice2 = raw_input("   Reyy Project~# ")
     if choice2 == "1":
         clearScr()
         nmap()
@@ -248,13 +262,13 @@ def mapping():
         clearScr()
         mapping()
 
-# Discovery ###################################################################
+# Penemuan ###################################################################
 
 def discovery():
     clearScr()
     print(bughunterlogo)
     print("""
-    Discovery | https://thehackingsage.github.io
+    Penemuan | Mood Bahasa Indonesia
     ----------------------------------------------------------------
     
      [1] - Acunetix-WVS           [11] - W3af
@@ -268,8 +282,8 @@ def discovery():
      [9] - Websecurify Suite      [19] - Gobuster
     [10] - Joomscan               [20] - DirSearch
     """)
-    print("   [99] - Return to Main Menu \n")
-    choice3 = raw_input("   bughunter~# ")
+    print("   [99] - Kembali ke Menu Utama \n")
+    choice3 = raw_input("   Reyy Project~# ")
     os.system('clear')
     if choice3 == "1":
         acunetix()
@@ -326,28 +340,64 @@ def exploit():
     clearScr()
     print(bughunterlogo)
     print("""
-    Exploitation | https://thehackingsage.github.io
-    -------------------------------------------------------------------------------------------
+    Eksploitasi | Mood Bahasa Indonesia
+-----------------------------------------------------------------
+    Mood Menu By Venom Reyy
+-----------------------------------------------------------------
+    [1] XSS Radar 
+    [2] XSSHunter
+    [3] xssHunterClient
+    [4] DOMxssScanner
+    [5] XSSer
+    [6] BruteXSS
+    [7] XSStrike
+    [8] XSS'OR
+    [9] SQLmap
+   [10] OXML-xxe 
+   [11] XXEinjextor
+   [12] Tplmap
+   [13] SSRF-Detector 
+   [14] Ground Control  
+   [15] LFISuit
+   [16] Gen-xbin-Avi 
+   [17] GitTools
+   [18] DVCS Ripper
+   [19] TKO Subs 
+   [20] SubBruteforcer
+   [21] Second-Order 
+   [22] Race The Web
+   [23] CORStest
+   [24] RCE Struts-pwn
+   [25] ysoSerial
+   [26] PHPGGC
+   [27] Ground Control 
+   [28] Getsploit
+   [29] Findsploit
+   [30] BFAC
+   [31] WP-Scan 
+   [33] CMSmap
+   [33] Joomscan
+   [34] JSON W T T 
+   [35] Wfuzz
+   [36] Patator
+   [37] Hydra
+   [38] ChangeMe
+   [39] wappalyzer
+   [40] builtwith
+   [41] wafw00f
+   [42] assetnote
+   [43] jsbeautifier
+   [44] LinkFinder
+   [45] MobSF
+   [46] GenyMotion
+   [47] Apktool
+   [48] dex2jar
+   [49] jd-gui
+   [50] idb
     
-    XSS :                   SSTI :                  [22] - Race The Web     [38] - ChangeMe
-    [1] - XSS Radar         [12] - Tplmap           [23] - CORStest         [39] - wappalyzer
-    [2] - XSSHunter                                 [24] - RCE Struts-pwn   [40] - builtwith
-    [3] - xssHunterClient   SSRF :                  [25] - ysoSerial        [41] - wafw00f
-    [4] - DOMxssScanner     [13] - SSRF-Detector    [26] - PHPGGC           [42] - assetnote
-    [5] - XSSer             [14] - Ground Control   [27] - Retire-js        [43] - jsbeautifier
-    [6] - BruteXSS                                  [28] - Getsploit        [44] - LinkFinder
-    [7] - XSStrike          LFI :                   [29] - Findsploit      
-    [8] - XSS'OR            [15] - LFISuit          [30] - BFAC             Mobile : 
-                                                    [31] - WP-Scan          [45] - MobSF
-    SQLi :                  [16] - Gen-xbin-Avi     [32] - CMSmap           [46] - GenyMotion
-    [9] - SQLmap            [17] - GitTools         [33] - Joomscan         [47] - Apktool
-                            [18] - DVCS Ripper      [34] - JSON W T T       [48] - dex2jar
-    XXE :                   [19] - TKO Subs         [35] - Wfuzz            [49] - jd-gui
-    [10] - OXML-xxe         [20] - SubBruteforcer   [36] - Patator          [50] - idb
-    [11] - XXEinjextor      [21] - Second-Order     [37] - Hydra          
     """)
-    print("   [99] - Return to Main Menu \n")
-    choice4 = raw_input("   bughunter~# ")
+    print("   [99] - Kembali ke Menu Utama \n")
+    choice4 = raw_input("   Reyy Project~# ")
     if choice4 == "1":
         clearScr()
         xssradar()
@@ -514,19 +564,19 @@ def reporting():
     clearScr()
     print(bughunterlogo)
     print("""
-    PoCs & Reporting | https://thehackingsage.github.io
+    PoCs & Reporting | Mood Bahasa Indonesia
     ----------------------------------------------------------------
         
-    [1] - Bug Bounty Platforms
-    [2] - POCs (Proof of Concepts)
-    [3] - CheatSheet
-    [4] - EyeWitness
+    [1] - Platform Bounty Bug
+    [2] - POC (Bukti Konsep)
+    [3] - Contekan
+    [4] - Saksi mata
     [5] - HttpScreenshot
-    [6] - BugBountyTemplates
-    [7] - Template Generator
+    [6] - BugBountyTemplat
+    [7] - Pembuat Templat
     """)    
-    print("   [99] - Return to Main Menu \n")
-    choice5 = raw_input("   bughunter~# ")
+    print("   [99] - Kembali ke Menu Utama \n")
+    choice5 = raw_input("   Reyy Project~# ")
     if choice5 == "tips":
      clearScr()
      bugtips()
@@ -558,27 +608,27 @@ def reporting():
     else:
         reporting()
 
-# SAGE ########################################################################
+# reyy ########################################################################
 
 def sage():
     clearScr()
     print(bughunterlogo)
     print("""
-    Tools by Mr. SAGE | https://thehackingsage.github.io
+    Tools by Venom Reyy | Mood Bahasa Indonesia
     ----------------------------------------------------------------
     
-    [1] - Hacktronian - A Collection of Hacking Tools for Unix
-    [2] - Hackdroid - 250+ Penetration Testing Apps for Android
-    [3] - Hacknix - Hacking Tools For All Debian-based OS
-    [4] - Fluxion - WPA/WPA2 Cracker Using Evil Twin Attack
-    [5] - Ducky 4 Arduino - Ducky Script for Arduino Leonardo Mini
-    [6] - DoS and DDoS - Attack & Protection Tools
-    [7] - Kali-WSL - GUI Mode in Kali Linux Windows
-    [8] - HackPi - Portable Hacking Machine with RPi3
+    [1] - Hacktronian - Kumpulan Alat Peretasan untuk Unix
+    [2] - Hackdroid - 250+ Aplikasi Pengujian Penetrasi untuk Android
+    [3] - Hacknix - Alat Peretasan Untuk Semua OS Berbasis Debian
+    [4] - Fluxion - Cracker WPA/WPA2 Menggunakan Evil Twin Attack
+    [5] - Ducky 4 Arduino - Skrip Ducky untuk Arduino Leonardo Mini
+    [6] - DoS dan DDoS - Alat Serangan & Perlindungan
+    [7] - Kali-WSL - Mode GUI di Kali Linux Windows
+    [8] - HackPi - Mesin Peretasan Portabel dengan RPi3
     [9] - TorFi - Anonymous WiFi Hotspot
     """)
-    print("   [99] - Return to Main Menu \n")
-    choicesage = raw_input("   bughunter~# ")
+    print("   [99] - Kembali ke Menu Utama \n")
+    choicesage = raw_input("   Reyy Project~# ")
     if choicesage == "1":
         clearScr()
         hacktronian()
@@ -616,17 +666,16 @@ def sage():
         clearScr()
         sage()
 
-# Update ######################################################################
+# Memperbarui ######################################################################
 
 def updatebughunter():
     os.system('clear')
     print(bughunterlogo)
-    print ("""
-    Update Bughunter To Latest Version.. Current Version : 1.0
+    print (""" update Bughunter Mood Bahasa Indonesia Ke Versi Terbaru.. Versi Saat Ini: 1.0
     
-    Check Latest Version Here : https://github.com/thehackingsage/bughunter
+    Periksa Versi Terbaru Di Sini: https://github.com/Rediawan
     """)
-    choiceupdate = raw_input(" Press Enter and Go Back To Main Menu : ")
+    choiceupdate = raw_input(" Tekan Enter dan Kembali Ke Menu Utama : ")
     if choiceupdate == "":
         clearScr()
         menu()
@@ -634,42 +683,42 @@ def updatebughunter():
         clearScr()
         menu()
 
-# About #######################################################################
+# Tentang #######################################################################
 
 def about():
     os.system('clear')
     print(bughunterlogo)
     print ("""
 ---------------------------------------------------------------------
-    BugHunter v1.0 by Mr. SAGE. | https://thehackingsage.github.io   
+    BugHunter v1.0 | Mood Bahasa Indonesia
 ---------------------------------------------------------------------
-    Download Directory : 
+    Unduh Direktori: 
     
-    Normal User : /home/$USER/bughunter/
+    Pengguna Normal : /home/$USER/bughunter/
     
-    Root User : /root/bughunter/
+    Pengguna Root : /root/bughunter/
    
-    ~/bughunter/info/ : Tools for Information Gathering
-    ~/bughunter/mapp/ : Tools for Mapping    
-    ~/bughunter/disc/ : Tools for Discovery
-    ~/bughunter/expt/ : Tools for Exploitation
-    ~/bughunter/rept/ : Tools for Reporting
-    ~/bughunter/sage/ : Tools by Mr. SAGE
+    ~/bughunter/info/ : Alat untuk Pengumpulan Informasi
+    ~/bughunter/mapp/ : Alat untuk Pemetaan    
+    ~/bughunter/disc/ : Alat untuk Penemuan
+    ~/bughunter/expt/ : Alat untuk Eksploitasi
+    ~/bughunter/rept/ : Alat untuk Pelaporan
+    ~/bughunter/reyy/ : Tools by Venom Reyy
 
-    Attention : View README.md File for Installation Instruction and How To Use Guide.
+    Perhatian : Lihat File README.md untuk Petunjuk Instalasi dan Panduan Cara Penggunaan.
 ---------------------------------------------------------------------
-    Follow Me : https://thehackingsage.github.io
+    Link Media sosial Kami Bisa Cek Di Bawah
  
-    Blog      :  https://thehacktronian.blogspot.com
-    Github    :  https://github.com/thehackingsage
-    YouTube   :  https://youtube.com/hacktronian
-    Twitter   :  https://twitter.com/thehackingsage
-    Instagram :  https://instagram.com/thehackingsage
+    Blog      :  https://venomccybersecurity.blogspot.com/
+    Github    :  https://github.com/Rediawan
+    YouTube   :  Venom Reyy
+    Twitter   :  Gk Punya
+    Instagram :  venom_cyber_security
 ---------------------------------------------------------------------
-    [!] Thanks for Using This Tool :) 
+[!] Terima Kasih Telah Menggunakan Tools ini
 ---------------------------------------------------------------------
     """)
-    choiceabout = raw_input(" Press Enter and Go Back To Main Menu : ")
+    choiceabout = raw_input(" Tekan Enter dan Kembali Ke Menu Utama : ")
     if choiceabout == "":
         clearScr()
         menu()
@@ -683,7 +732,7 @@ def myinfo():
     os.system('clear')
     print(bughunterlogo)
     os.system("curl ipinfo.io")
-    choicemyinfo = raw_input("\n Press Enter and Go Back To Main Menu : ")
+    choicemyinfo = raw_input("\n Tekan Enter dan Kembali Ke Menu Utama : ")
     if choicemyinfo == "":
         clearScr()
         menu()
@@ -696,11 +745,11 @@ def myinfo():
 def hacktronian():
     os.system('clear')
     print ("""
-    A Collection of Hacking Tools for Unix.
+    Kumpulan Alat Peretasan untuk Unix.
     
-    Read More : https://github.com/thehackingsage/hacktronian
+    Baca Selengkapnya: https://github.com/Rediawan/hacktronian
     """)
-    choicehacktronian = raw_input(" Do You Want To Download Hacktronian? (Y/N) : ")
+    choicehacktronian = raw_input(" Apakah Anda Ingin Mengunduh? Hacktronian? (Y/N) : ")
     if choicehacktronian in yes:
         os.system("cd ~/bughunter/sage/ && git clone https://github.com/thehackingsage/hacktronian.git")
     elif choicehacktronian in no:
@@ -716,13 +765,11 @@ def hacktronian():
 def hackdroid():
     os.system('clear')
     print ("""
-    HackDroid is a collection of 250+ Penetration Testing and Ethical Hacking 
-    Apps for Android... in this, The Applications is divided into different 
-    categories so You can Download any App from any Category and Use it..
+    HackDroid adalah kumpulan 250+ Pengujian Penetrasi dan Peretasan Etis Aplikasi untuk Android ... dalam hal ini, Aplikasi dibagi menjadi berbeda kategori sehingga Anda dapat Mengunduh Aplikasi apa pun dari 
     
-    Read More : https://github.com/thehackingsage/HackDroid
+    Baca Selengkapnya: https://github.com/Rediawan/HackDroid
     """)
-    choicehackdroid = raw_input(" Do You Want To Download Hackdroid? (Y/N) : ")
+    choicehackdroid = raw_input(" Apakah Anda Ingin Mengunduh? Hackdroid? (Y/N) : ")
     if choicehackdroid in yes:
         os.system("firefox https://github.com/thehackingsage/HackDroid")
     elif choicehackdroid in no:
@@ -738,13 +785,11 @@ def hackdroid():
 def hacknix():
     os.system('clear')
     print ("""
-    Hacknix is a script that installs all Kali Linux tools in your Debian-based 
-    operating system. All you need is Python 2.7 and the Git package installed 
-    in your system. Using this script, you can add and remove Kali Linux repositories..
+    Hacknix adalah skrip yang menginstal semua alat Kali Linux di sistem operasi berbasis Debian Anda. Yang Anda butuhkan hanyalah Python 2.7 dan paket Git yang terinstal di sistem Anda. Dengan menggunakan skrip ini, Anda dapat menambahkan
     
-    Read More : https://github.com/thehackingsage/hacknix
+    Baca Selengkapnya: https://github.com/Rediawan/hacknix
     """)
-    choicehacknix = raw_input(" Do You Want To Download Hacknix? (Y/N) : ")
+    choicehacknix = raw_input(" Apakah Anda Ingin Mengunduh? Hacknix? (Y/N) : ")
     if choicehacknix in yes:
         os.system("cd ~/bughunter/sage/ && git clone https://github.com/thehackingsage/hacknix.git")
     elif choicehacknix in no:
@@ -760,12 +805,11 @@ def hacknix():
 def fluxion():
     os.system('clear')
     print(""" 
-    Fluxion is a wifi key cracker using evil twin attack..
-    you need a wireless adoptor for this tool.
+    Fluxion adalah cracker kunci wifi menggunakan serangan kembar jahat.. Anda memerlukan adaptor nirkabel untuk alat ini.
     
-    Read More : https://github.com/thehackingsage/Fluxion
+    Baca Selengkapnya: https://github.com/Rediawan/Fluxion
     """)
-    choicefluxion = raw_input(" Do You Want To Download Fluxion? (Y/N) : ")
+    choicefluxion = raw_input(" Apakah Anda Ingin Mengunduh? Fluxion? (Y/N) : ")
     if choicefluxion in yes:
         os.system("cd ~/bughunter/sage/ && git clone https://github.com/thehackingsage/Fluxion.git")
     elif choicefluxion in no:
@@ -781,9 +825,9 @@ def fluxion():
 def duckydino():
     os.system('clear')
     print ("""
-    Ducky Script for Arduino Leonardo Mini & Arduino Uno + Payload to Arduino Converter
+    Skrip Ducky untuk Arduino Leonardo Mini & Arduino Uno + Muatan ke Konverter Arduino
     
-    Read More : https://github.com/thehackingsage/ducky4arduino
+    Baca Selengkapnya: https://github.com/Rediawan/ducky4arduino
     """)
     choiceduckydino = raw_input(" Do You Want To Use DuckyDino? (Y/N) : ")
     if choiceduckydino in yes:
@@ -801,13 +845,13 @@ def duckydino():
 def ddos():
     os.system('clear')
     print ("""
-    DoS and DDoS Attack & Protection Tools for Windows, Linux & Android 
+    Alat Serangan & Perlindungan DoS dan DDoS untuk Windows, Linux & Android 
     
-    !!! For Educational Purposes Only !!!
+    !!! Untuk Tujuan Pendidikan Saja!!!
     
-    Read More : https://github.com/thehackingsage/DDoS
+    Baca Selengkapnya: https://github.com/Rediawan/DDoS
     """)
-    choiceddos = raw_input(" Do You Want To Download DoS & DDoS Tools? (Y/N) : ")
+    choiceddos = raw_input(" Apakah Anda Ingin Mengunduh? DoS & DDoS Tools? (Y/N) : ")
     if choiceddos in yes:
         os.system("cd ~/bughunter/sage/ && git clone https://github.com/thehackingsage/DDoS.git")
     elif choiceddos in no:
@@ -823,15 +867,15 @@ def ddos():
 def kaliwsl():
     os.system('clear')
     print ("""
-    Tool for Kali Linux Windows App :    
-    Update, Upgrade, XFCE4 - GUI Mode & Hacking Tools..
+    Alat untuk Aplikasi Windows Kali Linux:
+    Perbarui, Tingkatkan, XFCE4 - Mode GUI & Alat Peretasan..
     
-    After Enabling WSL and Installing Kali Linux App 
-    from the Microsoft Store in Windows 10, Run This Script. 
+    Setelah Mengaktifkan WSL dan Menginstal Aplikasi Kali Linux
+    dari Microsoft Store di Windows 10, Jalankan Script Ini. 
     
-    Read More : https://github.com/thehackingsage/Kali-WSL.git
+    Baca Selengkapnya: https://github.com/Rediawan/Kali-WSL.git
     """)
-    choicekaliwsl = raw_input(" Do You Want To Download Kali-WSL? (Y/N) : ")
+    choicekaliwsl = raw_input(" Apakah Anda Ingin Mengunduh? Kali-WSL? (Y/N) : ")
     if choicekaliwsl in yes:
         os.system("cd ~/bughunter/sage/ && git clone https://github.com/thehackingsage/Kali-WSL.git")
     elif choicekaliwsl in no:
@@ -851,9 +895,9 @@ def hackpi():
     
     Update, Upgrade, AutoLogin, AutoVNC & Hacking Tools
     
-    Read More : https://github.com/thehackingsage/HackPi
+    Baca Selengkapnya: https://github.com/Rediawan/HackPi
     """)
-    choicehackpi = raw_input(" Do You Want To Download HackPi? (Y/N) : ")
+    choicehackpi = raw_input(" Apakah Anda Ingin Mengunduh? HackPi? (Y/N) : ")
     if choicehackpi in yes:
         os.system("cd ~/bughunter/sage/ && git clone https://github.com/thehackingsage/HackPi.git")
     elif choicehackpi in no:
@@ -871,9 +915,9 @@ def torfi():
     print ("""
     Anonymous WiFi Hotspot Using Raspberry Pi 3
     
-    Read More : https://github.com/thehackingsage/TorFi
+    Baca Selengkapnya: https://github.com/Rediawan/TorFi
     """)
-    choicehackpi = raw_input(" Do You Want To Download TorFi? (Y/N) : ")
+    choicehackpi = raw_input(" Apakah Anda Ingin Mengunduh? TorFi? (Y/N) : ")
     if choicehackpi in yes:
         os.system("cd ~/bughunter/sage/ && git clone https://github.com/thehackingsage/torFi.git")
     elif choicehackpi in no:
@@ -921,7 +965,7 @@ def masscan():
     Mass IP port scanner. ... It can scan the entire Internet in under 6 minutes, 
     transmitting 10 million packets per second.
     """)
-    choicemasscan = raw_input(" Do You Want To Download MASSCAN? (Y/N) : ")
+    choicemasscan = raw_input(" Apakah Anda Ingin Mengunduh? MASSCAN? (Y/N) : ")
     if choicemasscan in yes:
         os.system("cd ~/bughunter/info/ && git clone https://github.com/robertdavidgraham/masscan.git")
     elif choicemasscan in no:
@@ -942,7 +986,7 @@ def dnsrecon():
     the functionality of the original tool and in the process re-learn how DNS works 
     and how could it be used in the process of a security assessment and network troubleshooting.
     """)
-    choicednsrecon = raw_input(" Do You Want To Download DNS-Recon? (Y/N) : ")
+    choicednsrecon = raw_input(" Apakah Anda Ingin Mengunduh? DNS-Recon? (Y/N) : ")
     if choicednsrecon in yes:
         os.system("cd ~/bughunter/info/ && git clone https://github.com/darkoperator/dnsrecon.git")
     elif choicednsrecon in no:
@@ -964,7 +1008,7 @@ def sublister():
     such as Google, Yahoo, Bing, Baidu, and Ask. Sublist3r also enumerates subdomains 
     using Netcraft, Virustotal, ThreatCrowd, DNSdumpster, and ReverseDNS.
     """)
-    choicesublister = raw_input(" Do You Want To Download SubList3r? (Y/N) : ")
+    choicesublister = raw_input(" Apakah Anda Ingin Mengunduh? SubList3r? (Y/N) : ")
     if choicesublister in yes:
         os.system("cd ~/bughunter/info/ && git clone https://github.com/aboul3la/Sublist3r.git")
     elif choicesublister in no:
@@ -994,7 +1038,7 @@ def altdns():
     Altdns works best with large datasets. Having an initial dataset of 200 or more subdomains should 
     churn out some valid subdomains via the alterations generated.
     """)
-    choicealtdns = raw_input(" Do You Want To Download Altdns? (Y/N) : ")
+    choicealtdns = raw_input(" Apakah Anda Ingin Mengunduh? Altdns? (Y/N) : ")
     if choicealtdns in yes:
         os.system("cd ~/bughunter/info/ && git clone https://github.com/infosec-au/altdns.git")
     elif choicealtdns in no:
@@ -1012,7 +1056,7 @@ def amass():
     print ("""
     Amass is a tool for In-Depth DNS Enumeration and Network Mapping..
     """)
-    choiceamass = raw_input(" Do You Want To Download Amass? (Y/N) : ")
+    choiceamass = raw_input(" Apakah Anda Ingin Mengunduh? Amass? (Y/N) : ")
     if choiceamass in yes:
         os.system("cd ~/bughunter/info/ && git clone https://github.com/caffix/amass.git")
     elif choiceamass in no:
@@ -1031,7 +1075,7 @@ def subfinder():
     SubFinder is a subdomain discovery tool that discovers valid subdomains for websites. 
     Designed as a passive framework to be useful for bug bounties and safe for penetration testing.
     """)
-    choicesubfinder = raw_input(" Do You Want To Download Subfinder? (Y/N) : ")
+    choicesubfinder = raw_input(" Apakah Anda Ingin Mengunduh? Subfinder? (Y/N) : ")
     if choicesubfinder in yes:
         os.system("cd ~/bughunter/info/ && git clone https://github.com/subfinder/subfinder.git")
     elif choicesubfinder in no:
@@ -1050,7 +1094,7 @@ def enumall():
     Recon-ng and Alt-DNS are awesome. This script combines the power of these 
     tools with the ability to run multiple domains within the same session.
     """)
-    choiceenumall = raw_input(" Do You Want To Download Enumall? (Y/N) : ")
+    choiceenumall = raw_input(" Apakah Anda Ingin Mengunduh? Enumall? (Y/N) : ")
     if choiceenumall in yes:
         os.system("cd ~/bughunter/info/ && git clone https://github.com/jhaddix/domain.git && mv domain enumall")
     elif choiceenumall in no:
@@ -1069,7 +1113,7 @@ def aquatone():
     Aquatone is a tool for visual inspection of websites across a large amount of hosts 
     and is convenient for quickly gaining an overview of HTTP-based attack surface.
     """)
-    choiceaquatone = raw_input(" Do You Want To Download Aquatone? (Y/N) : ")
+    choiceaquatone = raw_input(" Apakah Anda Ingin Mengunduh? Aquatone? (Y/N) : ")
     if choiceaquatone in yes:
         os.system("cd ~/bughunter/info/ && git clone https://github.com/michenriksen/aquatone.git")
     elif choiceaquatone in no:
@@ -1087,7 +1131,7 @@ def cloudenum():
     print ("""
     A simple tool to allow easy querying of Cloudflare's DNS data written in Python.
     """)
-    choicecloudenum = raw_input(" Do You Want To Download Cloudflare Enumeration Tool? (Y/N) : ")
+    choicecloudenum = raw_input(" Apakah Anda Ingin Mengunduh? Cloudflare Enumeration Tool? (Y/N) : ")
     if choicecloudenum in yes:
         os.system("cd ~/bughunter/info/ && git clone https://github.com/mandatoryprogrammer/cloudflare_enum.git")
     elif choicecloudenum in no:
@@ -1105,7 +1149,7 @@ def infog():
     print ("""
     A Information Gethering Tool by LinuxChoice.
     """)
-    choiceinfog = raw_input(" Do You Want To Download InfoG? (Y/N) : ")
+    choiceinfog = raw_input(" Apakah Anda Ingin Mengunduh? InfoG? (Y/N) : ")
     if choiceinfog in yes:
         os.system("cd ~/bughunter/info/ && git clone https://github.com/thelinuxchoice/infog.git")
     elif choiceinfog in no:
@@ -1125,7 +1169,7 @@ def harvester():
     virtual hosts, open ports/ banners, and employee names from different 
     public sources (search engines, pgp key servers).
     """)
-    choiceharvester = raw_input(" Do You Want To Download The Harvester? (Y/N) : ")
+    choiceharvester = raw_input(" Apakah Anda Ingin Mengunduh? The Harvester? (Y/N) : ")
     if choiceharvester in yes:
         os.system("cd ~/bughunter/info/ && git clone https://github.com/laramies/theHarvester.git")
     elif choiceharvester in no:
@@ -1143,7 +1187,7 @@ def reconng():
     print ("""
     One of The Best Reconnaissance Tool.. (and my personal favourite) 
     """)
-    choicereconng = raw_input(" Do You Want To Download Recon-ng? (Y/N) : ")
+    choicereconng = raw_input(" Apakah Anda Ingin Mengunduh? Recon-ng? (Y/N) : ")
     if choicereconng in yes:
         os.system("cd ~/bughunter/info/ && git clone https://LaNMaSteR53@bitbucket.org/LaNMaSteR53/recon-ng.git")
     elif choicereconng in no:
@@ -1163,7 +1207,7 @@ def setoolkit():
     designed for social engineering. SET has a number of custom attack vectors that
     allow you to make a believable attack quickly.
     """)
-    choicesetoolkit = raw_input(" Do You Want To Download Setoolkit (Y/N) : ")
+    choicesetoolkit = raw_input(" Apakah Anda Ingin Mengunduh? Setoolkit (Y/N) : ")
     if choicesetoolkit in yes:
         os.system("cd ~/bughunter/info/ && git clone https://github.com/trustedsec/social-engineer-toolkit.git")
     elif choicesetoolkit in no:
@@ -1186,7 +1230,7 @@ def whatweb():
     also identifies version numbers, email addresses, account IDs, web framework modules, 
     SQL errors, and more.
     """)
-    choicewhatweb = raw_input(" Do You Want To Download WhatWeb? (Y/N) : ")
+    choicewhatweb = raw_input(" Apakah Anda Ingin Mengunduh? WhatWeb? (Y/N) : ")
     if choicewhatweb in yes:
         os.system("cd ~/bughunter/info/ && git clone https://github.com/urbanadventurer/WhatWeb.git")
     elif choicewhatweb in no:
@@ -1207,7 +1251,7 @@ def maltego():
     discovery of data from open sources, and visualizing that information in a graph 
     format, suitable for link analysis and data mining. 
     """)
-    choicemaltego = raw_input(" Do You Want To Download Maltego? (Y/N) : ")
+    choicemaltego = raw_input(" Apakah Anda Ingin Mengunduh? Maltego? (Y/N) : ")
     if choicemaltego in yes:
         os.system("firefox https://www.paterva.com/web7/downloads.php")
     elif choicemaltego in no:
@@ -1226,7 +1270,7 @@ def goohak():
     Automatically launch google hacking queries against a target domain to find 
     vulnerabilities and enumerate a target.
     """)
-    choicegoohak = raw_input (" Do You Want To Download Goohak? (Y/N) : ")
+    choicegoohak = raw_input (" Apakah Anda Ingin Mengunduh? Goohak? (Y/N) : ")
     if choicegoohak in yes:
         os.system("cd ~/bughunter/info/ && git clone https://github.com/1N3/Goohak.git")
     elif choicegoohak in no:
@@ -1247,7 +1291,7 @@ def googdorker():
     two versions, a bash script designed for OSX and a python script designed 
     to be cross platform.
     """)
-    choicegoogdorker = raw_input (" Do You Want To Download Googdorker? (Y/N) : ")
+    choicegoogdorker = raw_input (" Apakah Anda Ingin Mengunduh? Googdorker? (Y/N) : ")
     if choicegoogdorker in yes:
         os.system("cd ~/bughunter/info/ && git clone https://github.com/ZephrFish/GoogD0rker.git")
     elif choicegoogdorker in no:
@@ -1317,7 +1361,7 @@ def nmap():
     target host and then analyzes the responses. It's a TCP/IP host and port scanning 
     tool with fantastic service and OS fingerprinting capabilities.
     """)
-    choicenmap = raw_input(" Do You Want To Download Nmap? (Y/N) : ")
+    choicenmap = raw_input(" Apakah Anda Ingin Mengunduh? Nmap? (Y/N) : ")
     if choicenmap in yes:
         os.system("cd ~/bughunter/mapp/ && git clone https://github.com/nmap/nmap.git")
     elif choicenmap in no:
@@ -1338,7 +1382,7 @@ def firefox():
     https://www.mozilla.org/en-US/firefox/new/
     
     """)
-    choicefirefox = raw_input(" Do You Want To Download Firefox? (Y/N) : ")
+    choicefirefox = raw_input(" Apakah Anda Ingin Mengunduh? Firefox? (Y/N) : ")
     if choicefirefox in yes:
         os.system("sudo apt-get install firefox")
     elif choicefirefox in no:
@@ -1357,7 +1401,7 @@ def firefoxext():
     A tool that transforms Firefox browsers into a penetration testing suite.
     
     """)
-    choicefirefoxext = raw_input(" Do You Want To Download Firefox Pentesting Extensions? (Y/N) : ")
+    choicefirefoxext = raw_input(" Apakah Anda Ingin Mengunduh? Firefox Pentesting Extensions? (Y/N) : ")
     if choicefirefoxext in yes:
         os.system("cd ~/bughunter/mapp && git clone https://github.com/mazen160/Firefox-Security-Toolkit.git")
     elif choicefirefoxext in no:
@@ -1380,7 +1424,7 @@ def burpsuitepro():
     
     BurpSuite Pro v1.6.67 : https://github.com/thehackingsage/burpsuite.git\n
     """)
-    choiceburp = raw_input(" Do You Want To Download BurpSuite Pro v1.6.67 (Y/N) : ")
+    choiceburp = raw_input(" Apakah Anda Ingin Mengunduh? BurpSuite Pro v1.6.67 (Y/N) : ")
     if choiceburp in yes:
         os.system("firefox https://github.com/thehackingsage/burpsuite.git")
     elif choiceburp in no:
@@ -1408,7 +1452,7 @@ def burpext():
  
     Burp Suite Pro v1.6.67 : https://github.com/thehackingsage/burpsuite.git
     """)
-    choiceburpext = raw_input("\n Press Enter and Go Back To Main Menu : ")
+    choiceburpext = raw_input("\n Tekan Enter dan Kembali Ke Menu Utama : ")
     if choiceburpext == "":
          clearScr()
          mapping()
@@ -1422,7 +1466,7 @@ def intruderpayload():
     A collection of Burpsuite Intruder payloads, BurpBounty payloads, fuzz lists, 
     malicious file uploads and web pentesting methodologies and checklists. 
     """)
-    choiceintruderpayload = raw_input(" Do You Want To Download IntruderPayloads? (Y/N) : ")
+    choiceintruderpayload = raw_input(" Apakah Anda Ingin Mengunduh? IntruderPayloads? (Y/N) : ")
     if choiceintruderpayload in yes:
         os.system("cd ~/bughunter/mapp/ && git clone https://github.com/1N3/IntruderPayloads.git")
     elif choiceintruderpayload in no:
@@ -1440,7 +1484,7 @@ def allpayload():
     print ("""
     A list of useful payloads and bypass for Web Application Security and Pentest/CTF
     """)
-    choiceallpayload = raw_input(" Do You Want To Download PayloadsAllTheThings? (Y/N) : ")
+    choiceallpayload = raw_input(" Apakah Anda Ingin Mengunduh? PayloadsAllTheThings? (Y/N) : ")
     if choiceallpayload in yes:
         os.system("cd ~/bughunter/mapp/ && git clone https://github.com/swisskyrepo/PayloadsAllTheThings.git")
     elif choiceallpayload in no:
@@ -1458,7 +1502,7 @@ def gitallsec():
     print ("""
     A tool to capture all the git secrets by leveraging multiple open source git searching tools
     """)
-    choicegitallsec = raw_input(" Do You Want To Download Git-all-Secrets? (Y/N) : ")
+    choicegitallsec = raw_input(" Apakah Anda Ingin Mengunduh? Git-all-Secrets? (Y/N) : ")
     if choicegitallsec in yes:
         os.system("cd ~/bughunter/mapp/ && git clone https://github.com/anshumanbh/git-all-secrets.git")
     elif choicegitallsec in no:
@@ -1481,7 +1525,7 @@ def acunetix():
     technology. It automatically crawls your websites and performs black box AND grey box hacking 
     techniques which finds dangerous vulnerabilities that can compromise your website and data.
     """)
-    choiceacunetix = raw_input(" Do You Want To Download Acunetix Web Vulnerability Scanner? (Y/N) : ")
+    choiceacunetix = raw_input(" Apakah Anda Ingin Mengunduh? Acunetix Web Vulnerability Scanner? (Y/N) : ")
     if choiceacunetix in yes:
         os.system("firefox https://www.acunetix.com/vulnerability-scanner/download/")
     elif choiceacunetix in no:
@@ -1500,7 +1544,7 @@ def arachni():
     Arachni is a feature-full, modular, high-performance Ruby framework aimed towards helping 
     penetration testers and administrators evaluate the security of modern web applications.
     """)
-    choicearachni = raw_input(" Do You Want To Download Arachni Web Vulnerability Scanner? (Y/N) : ")
+    choicearachni = raw_input(" Apakah Anda Ingin Mengunduh? Arachni Web Vulnerability Scanner? (Y/N) : ")
     if choicearachni in yes:
         os.system("firefox http://www.arachni-scanner.com/download/")
     elif choicearachni in no:
@@ -1519,7 +1563,7 @@ def burpsuite():
     Burp or Burp Suite is a graphical tool for testing Web application security. 
     The tool is written in Java and developed by PortSwigger Web Security. 
     """)
-    choiceburpsuite = raw_input(" Do You Want To Download Burp Suite Community Edition? (Y/N) : ")
+    choiceburpsuite = raw_input(" Apakah Anda Ingin Mengunduh? Burp Suite Community Edition? (Y/N) : ")
     if choiceburpsuite in yes:
         os.system("firefox https://portswigger.net/burp/communitydownload")
     elif choiceburpsuite in no:
@@ -1540,7 +1584,7 @@ def nexpose():
     impact analysis, reporting and mitigation. It integrates with Rapid7's Metasploit for 
     vulnerability exploitation.
     """)
-    choicenexpose = raw_input(" Do You Want To Download Nexpose? (Y/N) : ")
+    choicenexpose = raw_input(" Apakah Anda Ingin Mengunduh? Nexpose? (Y/N) : ")
     if choicenexpose in yes:
         os.system("firefox https://www.rapid7.com/products/nexpose/download/")
     elif choicenexpose in no:
@@ -1562,7 +1606,7 @@ def nikto():
     and version specific problems on over 270 servers.
 
     """)
-    choicenikto = raw_input(" Do You Want To Download Nikto? (Y/N) : ")
+    choicenikto = raw_input(" Apakah Anda Ingin Mengunduh? Nikto? (Y/N) : ")
     if choicenikto in yes:
         os.system("cd ~/bughunter/disc/ && git clone https://github.com/sullo/nikto.git")
     elif choicenikto in no:
@@ -1582,7 +1626,7 @@ def vega():
     to test the security of web applications. Vega can help you find and validate SQL Injection, 
     Cross-Site Scripting (XSS), inadvertently disclosed sensitive information, and other vulnerabilities.
     """)
-    choicevega = raw_input(" Do You Want To Download Vega? (Y/N) : ")
+    choicevega = raw_input(" Apakah Anda Ingin Mengunduh? Vega? (Y/N) : ")
     if choicevega in yes:
         os.system("firefox https://subgraph.com/vega/download/")
     elif choicevega in no:
@@ -1602,7 +1646,7 @@ def wapiti():
     like XSS, SQL and XPath injections, file inclusions, command execution, XXE injections, 
     CRLF injections, Server Side Request Forgery... It use the Python 3 programming language.
     """)
-    choicewapiti = raw_input(" Do You Want To Download Wapiti? (Y/N) : ")
+    choicewapiti = raw_input(" Apakah Anda Ingin Mengunduh? Wapiti? (Y/N) : ")
     if choicewapiti in yes:
         os.system("cd ~/bughunter/disc/ && wget https://sourceforge.net/projects/wapiti/files/wapiti/wapiti-3.0.1/wapiti3-3.0.1.zip")
     elif choicewapiti in no:
@@ -1650,7 +1694,7 @@ def joomscan():
     provides a user-friendly interface and compiles the final reports in both text and HTML formats for 
     ease of use and minimization of reporting overheads. 
     """)
-    choicejoomscan = raw_input(" Do You Want To Download JoomScan? (Y/N) : ")
+    choicejoomscan = raw_input(" Apakah Anda Ingin Mengunduh? JoomScan? (Y/N) : ")
     if choicejoomscan in yes:
         os.system("cd ~/bughunter/disc/ && git clone https://github.com/rezasp/joomscan.git")
     elif choicejoomscan in no:
@@ -1670,7 +1714,7 @@ def waaaf():
     identify and exploit vulnerabilities in their web applications. The scanner is able to identify 200+ 
     vulnerabilities, including Cross-Site Scripting, SQL injection and OS commanding.
     """)
-    choicewaaaf = raw_input(" Do You Want To Download W3AF? (Y/N) : ")
+    choicewaaaf = raw_input(" Apakah Anda Ingin Mengunduh? W3AF? (Y/N) : ")
     if choicewaaaf in yes:
         os.system("cd ~/bughunter/disc/ && git clone https://github.com/andresriancho/w3af.git")
     elif choicewaaaf in no:
@@ -1690,7 +1734,7 @@ def zed():
     by both those new to application security as well as professional penetration testers. 
     It is one of the most active OWASP projects and has been given Flagship status.
     """)
-    choicezed = raw_input(" Do You Want To Download Wapiti? (Y/N) : ")
+    choicezed = raw_input(" Apakah Anda Ingin Mengunduh? Wapiti? (Y/N) : ")
     if choicezed in yes:
         os.system("cd ~/bughunter/disc/ && wget https://github.com/zaproxy/zaproxy/releases/download/w2018-12-10/ZAP_WEEKLY_D-2018-12-10.zip")
     elif choicezed in no:
@@ -1710,7 +1754,7 @@ def wpscan():
     for security professionals and blog maintainers to test the security of their sites. 
     https://www.wpscan.org
     """)
-    choicewpscan = raw_input(" Do You Want To Download WP-Scan? (Y/N) : ")
+    choicewpscan = raw_input(" Apakah Anda Ingin Mengunduh? WP-Scan? (Y/N) : ")
     if choicewpscan in yes:
         os.system("cd ~/bughunter/disc/ && git clone https://github.com/wpscanteam/wpscan.git")
     elif choicewpscan in no:
@@ -1731,7 +1775,7 @@ def fuzzdb():
     open dictionary of fault injection patterns, predictable resource locations, and regex for 
     matching server responses.
     """)
-    choicefuzzdb = raw_input(" Do You Want To Download FuzzDB? (Y/N) : ")
+    choicefuzzdb = raw_input(" Apakah Anda Ingin Mengunduh? FuzzDB? (Y/N) : ")
     if choicefuzzdb in yes:
         os.system("cd ~/bughunter/disc/ && git clone https://github.com/fuzzdb-project/fuzzdb.git")
     elif choicefuzzdb in no:
@@ -1749,7 +1793,7 @@ def cewl():
     print ("""
     CeWL is a Custom Word List Generator
     """)
-    choicecewl = raw_input(" Do You Want To Download CeWL? (Y/N) : ")
+    choicecewl = raw_input(" Apakah Anda Ingin Mengunduh? CeWL? (Y/N) : ")
     if choicecewl in yes:
         os.system("cd ~/bughunter/disc/ && git clone https://github.com/digininja/CeWL.git")
     elif choicecewl in no:
@@ -1768,7 +1812,7 @@ def dirbuster():
     DirBuster is a multi threaded java application designed to brute force directories 
     and files names on web/application servers.
     """)
-    choicedirbuster = raw_input(" Do You Want To Download DirBuster? (Y/N) : ")
+    choicedirbuster = raw_input(" Apakah Anda Ingin Mengunduh? DirBuster? (Y/N) : ")
     if choicedirbuster in yes:
         os.system("firefox https://sourceforge.net/projects/dirbuster/")
     elif choicedirbuster in no:
@@ -1788,7 +1832,7 @@ def dirb():
     It basically works by launching a dictionary based attack against a web server 
     and analizing the response.
     """)
-    choicedirb = raw_input(" Do You Want To Download DIRB? (Y/N) : ")
+    choicedirb = raw_input(" Apakah Anda Ingin Mengunduh? DIRB? (Y/N) : ")
     if choicedirb in yes:
         os.system("cd ~/bughunter/disc/ && wget https://sourceforge.net/projects/dirb/files/dirb/2.22/dirb222.tar.gz")
     elif choicedirb in no:
@@ -1806,7 +1850,7 @@ def filebuster():
     print ("""
     An extremely fast and flexible web fuzzer.
     """)
-    choicefilebuster = raw_input(" Do You Want To Download FileBuster? (Y/N) : ")
+    choicefilebuster = raw_input(" Apakah Anda Ingin Mengunduh? FileBuster? (Y/N) : ")
     if choicefilebuster in yes:
         os.system("cd ~/bughunter/disc/ && git clone https://github.com/henshin/filebuster.git")
     elif choicefilebuster in no:
@@ -1824,7 +1868,7 @@ def gobuster():
     print ("""
     GoBuster is a tool used to brute-force URIs in web sites and DNS subdomains (with wildcard support).
     """)
-    choicegobuster = raw_input(" Do You Want To Download GoBuster? (Y/N) : ")
+    choicegobuster = raw_input(" Apakah Anda Ingin Mengunduh? GoBuster? (Y/N) : ")
     if choicegobuster in yes:
         os.system("cd ~/bughunter/disc/ && git clone https://github.com/OJ/gobuster.git")
     elif choicegobuster in no:
@@ -1842,7 +1886,7 @@ def dirsearch():
     print ("""
     Dirsearch is a simple command line tool designed to brute force directories and files in websites.
     """)
-    choicedirsearch = raw_input(" Do You Want To Download Wapiti? (Y/N) : ")
+    choicedirsearch = raw_input(" Apakah Anda Ingin Mengunduh? Wapiti? (Y/N) : ")
     if choicedirsearch in yes:
         os.system("cd ~/bughunter/disc/ && git clone https://github.com/maurosoria/dirsearch.git")
     elif choicedirsearch in no:
@@ -1862,7 +1906,7 @@ def xssradar():
     print ("""
     XSS Radar is a tool that detects parameters and fuzzes them for cross-site scripting vulnerabilities.
     """)
-    choicexssradar = raw_input(" Do You Want To Download XSS Radar? (Y/N) : ")
+    choicexssradar = raw_input(" Apakah Anda Ingin Mengunduh? XSS Radar? (Y/N) : ")
     if choicexssradar in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/bugbountyforum/XSS-Radar.git")
     elif choicexssradar in no:
@@ -1884,7 +1928,7 @@ def xsshunter():
     
     Create an XSS Hunter account at https://xsshunter.com/
     """)
-    choicexsshunter = raw_input(" Do You Want To Download XSS Hunter? (Y/N) : ")
+    choicexsshunter = raw_input(" Apakah Anda Ingin Mengunduh? XSS Hunter? (Y/N) : ")
     if choicexsshunter in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/mandatoryprogrammer/xsshunter")
     elif choicexsshunter in no:
@@ -1907,7 +1951,7 @@ def xsshunterclient():
     multiple services (and even protocols) before firing, so it's not always clear what injection caused 
     a certain XSS payload to fire.
     """)
-    choicexsshunterclient = raw_input(" Do You Want To Download XSS Hunter Client? (Y/N) : ")
+    choicexsshunterclient = raw_input(" Apakah Anda Ingin Mengunduh? XSS Hunter Client? (Y/N) : ")
     if choicexsshunterclient in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/mandatoryprogrammer/xsshunter_client.git")
     elif choicexsshunterclient in no:
@@ -1926,7 +1970,7 @@ def domxss():
     DOM XSS Scanner is an online tool that facilitates code review of web pages and JavaScript code 
     for potential DOM based XSS security vulnerabilities.
     """)
-    choicedomxss = raw_input(" Do You Want To Download DOM XSS Scanner? (Y/N) : ")
+    choicedomxss = raw_input(" Apakah Anda Ingin Mengunduh? DOM XSS Scanner? (Y/N) : ")
     if choicedomxss in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/yaph/domxssscanner.git")
     elif choicedomxss in no:
@@ -1944,7 +1988,7 @@ def xsser():
     print ("""
     Cross Site "Scripter" (aka XSSer) is an automatic -framework- to detect, exploit and report XSS vulnerabilities.
     """)
-    choicexsser = raw_input(" Do You Want To Download XSSer? (Y/N) : ")
+    choicexsser = raw_input(" Apakah Anda Ingin Mengunduh? XSSer? (Y/N) : ")
     if choicexsser in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/epsylon/xsser.git")
     elif choicexsser in no:
@@ -1962,7 +2006,7 @@ def brutexss():
     print ("""
     Cross-Site Scripting BruteForcer 
     """)
-    choicebrutexss = raw_input(" Do You Want To Download BruteXSS? (Y/N) : ")
+    choicebrutexss = raw_input(" Apakah Anda Ingin Mengunduh? BruteXSS? (Y/N) : ")
     if choicebrutexss in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/rajeshmajumdar/BruteXSS.git")
     elif choicebrutexss in no:
@@ -1980,7 +2024,7 @@ def xsstrike():
     print("""
     XSStrike is a python script designed to detect and exploit XSS vulnerabilites.
     """)
-    choicexsstrike = raw_input(" Do You Want To Download XSStrike (Y/N) : ")
+    choicexsstrike = raw_input(" Apakah Anda Ingin Mengunduh? XSStrike (Y/N) : ")
     if choicexsstrike in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/UltimateHackers/XSStrike.git && cd XSStrike && chmod +x * && pip install -r requirements.txt && clear && python xsstrike")
     elif choicexsstrike in no:
@@ -1998,7 +2042,7 @@ def xssor():
     print ("""
     XSSOR contains three major modules: Encode/Decode, Codz, Probe. Try Online Version: http://xssor.io
     """)
-    choicexssor = raw_input(" Do You Want To Download XSSor? (Y/N) : ")
+    choicexssor = raw_input(" Apakah Anda Ingin Mengunduh? XSSor? (Y/N) : ")
     if choicexssor in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/evilcos/xssor2.git")
     elif choicexssor in no:
@@ -2016,7 +2060,7 @@ def sqlmap():
     print ("""
     Automatic SQL injection and database takeover tool. http://sqlmap.org
     """)
-    choicesqlmap = raw_input ( "Do You Want To Download Sqlmap? (Y/N) : ")
+    choicesqlmap = raw_input ( "Apakah Anda Ingin Mengunduh? Sqlmap? (Y/N) : ")
     if choicesqlmap in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/sqlmapproject/sqlmap.git")
     elif choicesqlmap in no:
@@ -2034,7 +2078,7 @@ def oxmlxxe():
     print ("""
     A tool for embedding XXE/XML exploits into different filetypes.
     """)
-    choiceoxmlxxe = raw_input(" Do You Want To Download OXML-XXE? (Y/N) : ")
+    choiceoxmlxxe = raw_input(" Apakah Anda Ingin Mengunduh? OXML-XXE? (Y/N) : ")
     if choiceoxmlxxe in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/BuffaloWill/oxml_xxe.git")
     elif choiceoxmlxxe in no:
@@ -2053,7 +2097,7 @@ def xeeinj():
     XXEinjector automates retrieving files using direct and out of band methods.
     Directory listing only works in Java applications. Bruteforcing method needs to be used for other applications.
     """)
-    choicexeeinj = raw_input(" Do You Want To Download XXEinjector? (Y/N) : ")
+    choicexeeinj = raw_input(" Apakah Anda Ingin Mengunduh? XXEinjector? (Y/N) : ")
     if choicexeeinj in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/enjoiz/XXEinjector.git")
     elif choicexeeinj in no:
@@ -2071,7 +2115,7 @@ def tplmap():
     print ("""
     Server-Side Template Injection and Code Injection Detection and Exploitation Tool.
     """)
-    choicetplmap = raw_input(" Do You Want To Download Tplmap? (Y/N) : ")
+    choicetplmap = raw_input(" Apakah Anda Ingin Mengunduh? Tplmap? (Y/N) : ")
     if choicetplmap in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/epinna/tplmap.git")
     elif choicetplmap in no:
@@ -2089,7 +2133,7 @@ def ssrfdetector():
     print ("""
     Server-side request forgery detector.
     """)
-    choicessrfdetector = raw_input(" Do You Want To Download SSRF-Detector? (Y/N) : ")
+    choicessrfdetector = raw_input(" Apakah Anda Ingin Mengunduh? SSRF-Detector? (Y/N) : ")
     if choicessrfdetector in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/JacobReynolds/ssrfDetector.git")
     elif choicessrfdetector in no:
@@ -2107,7 +2151,7 @@ def groundcontrol():
     print ("""
     A collection of scripts that run on my web server. Mainly for debugging SSRF, blind XSS, and XXE vulnerabilities.
     """)
-    choicegroundcontrol = raw_input(" Do You Want To Download Ground Control? (Y/N) : ")
+    choicegroundcontrol = raw_input(" Apakah Anda Ingin Mengunduh? Ground Control? (Y/N) : ")
     if choicegroundcontrol in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/jobertabma/ground-control.git")
     elif choicegroundcontrol in no:
@@ -2125,7 +2169,7 @@ def lfisuit():
     print ("""
     Totally Automatic LFI Exploiter (+ Reverse Shell) and Scanner.
     """)
-    choicelfisuit = raw_input(" Do You Want To Download LFISuit? (Y/N) : ")
+    choicelfisuit = raw_input(" Apakah Anda Ingin Mengunduh? LFISuit? (Y/N) : ")
     if choicelfisuit in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/D35m0nd142/LFISuite.git")
     elif choicelfisuit in no:
@@ -2143,7 +2187,7 @@ def genxbinavi():
     print ("""
     File uploader.
     """)
-    choicegenxbinavi = raw_input(" Do You Want To Download Gen-xbin-Avi? (Y/N) : ")
+    choicegenxbinavi = raw_input(" Apakah Anda Ingin Mengunduh? Gen-xbin-Avi? (Y/N) : ")
     if choicegenxbinavi in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/neex/ffmpeg-avi-m3u-xbin.git")
     elif choicegenxbinavi in no:
@@ -2161,7 +2205,7 @@ def gittools():
     print ("""
     A repository with 3 tools for pwn'ing websites with .git repositories available.
     """)
-    choicegittools = raw_input(" Do You Want To Download GitTools? (Y/N) : ")
+    choicegittools = raw_input(" Apakah Anda Ingin Mengunduh? GitTools? (Y/N) : ")
     if choicegittools in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/internetwache/GitTools.git")
     elif choicegittools in no:
@@ -2179,7 +2223,7 @@ def dvcsripper():
     print ("""
     Rip web accessible (distributed) version control systems: SVN/GIT/HG...
     """)
-    choicedvcsripper = raw_input(" Do You Want To Download DVSC Ripper? (Y/N) : ")
+    choicedvcsripper = raw_input(" Apakah Anda Ingin Mengunduh? DVSC Ripper? (Y/N) : ")
     if choicedvcsripper in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/kost/dvcs-ripper.git")
     elif choicedvcsripper in no:
@@ -2197,7 +2241,7 @@ def tkosubs():
     print ("""
     A tool that can help detect and takeover subdomains with dead DNS records
     """)
-    choicetkosubs = raw_input(" Do You Want To Download tko-subs? (Y/N) : ")
+    choicetkosubs = raw_input(" Apakah Anda Ingin Mengunduh? tko-subs? (Y/N) : ")
     if choicetkosubs in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/anshumanbh/tko-subs.git")
     elif choicetkosubs in no:
@@ -2215,7 +2259,7 @@ def subbruteforcer():
     print ("""
     This app will bruteforce for exisiting subdomains and provide the IP address and Host information.
     """)
-    choicesubbruteforcer = raw_input(" Do You Want To Download HostileSubBruteforcer? (Y/N) : ")
+    choicesubbruteforcer = raw_input(" Apakah Anda Ingin Mengunduh? HostileSubBruteforcer? (Y/N) : ")
     if choicesubbruteforcer in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/nahamsec/HostileSubBruteforcer.git")
     elif choicesubbruteforcer in no:
@@ -2233,7 +2277,7 @@ def secondorder():
     print ("""
     Second-order subdomain takeover scanner.
     """)
-    choicesecondorder = raw_input(" Do You Want To Download Second-Order? (Y/N) : ")
+    choicesecondorder = raw_input(" Apakah Anda Ingin Mengunduh? Second-Order? (Y/N) : ")
     if choicesecondorder in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/mhmdiaa/second-order.git")
     elif choicesecondorder in no:
@@ -2251,7 +2295,7 @@ def racetheweb():
     print ("""
     Tests for race conditions in web applications. Includes a RESTful API to integrate into a continuous integration pipeline. http://RaceTheWeb.io
     """)
-    choiceracetheweb = raw_input(" Do You Want To Download Race The Web? (Y/N) : ")
+    choiceracetheweb = raw_input(" Apakah Anda Ingin Mengunduh? Race The Web? (Y/N) : ")
     if choiceracetheweb in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/insp3ctre/race-the-web.git")
     elif choiceracetheweb in no:
@@ -2269,7 +2313,7 @@ def corstest():
     print ("""
     A simple CORS misconfiguration scanner.
     """)
-    choicecorstest = raw_input(" Do You Want To Download CORStest? (Y/N) : ")
+    choicecorstest = raw_input(" Apakah Anda Ingin Mengunduh? CORStest? (Y/N) : ")
     if choicecorstest in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/RUB-NDS/CORStest.git")
     elif choicecorstest in no:
@@ -2287,7 +2331,7 @@ def rcestrutspwn():
     print ("""
     An exploit for Apache Struts CVE-2017-5638.
     """)
-    choicercestrutspwn = raw_input(" Do You Want To Download RCE struts-pwn? (Y/N) : ")
+    choicercestrutspwn = raw_input(" Apakah Anda Ingin Mengunduh? RCE struts-pwn? (Y/N) : ")
     if choicercestrutspwn in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/mazen160/struts-pwn.git")
     elif choicercestrutspwn in no:
@@ -2305,7 +2349,7 @@ def ysoserial():
     print ("""
     A proof-of-concept tool for generating payloads that exploit unsafe Java object deserialization.
     """)
-    choiceysoserial = raw_input(" Do You Want To Download Y-So-Serial? (Y/N) : ")
+    choiceysoserial = raw_input(" Apakah Anda Ingin Mengunduh? Y-So-Serial? (Y/N) : ")
     if choiceysoserial in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/GoSecure/ysoserial.git")
     elif choiceysoserial in no:
@@ -2323,7 +2367,7 @@ def phpggc():
     print ("""
     PHPGGC is a library of unserialize() payloads along with a tool to generate them, from command line or programmatically. 
     """)
-    choicephpggc = raw_input(" Do You Want To Download PHP Generic Gadget Chains? (Y/N) : ")
+    choicephpggc = raw_input(" Apakah Anda Ingin Mengunduh? PHP Generic Gadget Chains? (Y/N) : ")
     if choicephpggc in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/ambionics/phpggc.git")
     elif choicephpggc in no:
@@ -2342,7 +2386,7 @@ def retirejs():
     scanner detecting the use of JavaScript libraries with known vulnerabilities.
     http://retirejs.github.io/retire.js/
     """)
-    choiceretirejs = raw_input(" Do You Want To Download Retire.js? (Y/N) : ")
+    choiceretirejs = raw_input(" Apakah Anda Ingin Mengunduh? Retire.js? (Y/N) : ")
     if choiceretirejs in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/RetireJS/retire.js.git")
     elif choiceretirejs in no:
@@ -2360,7 +2404,7 @@ def getsploit():
     print ("""
     Command line utility for searching and downloading exploits.
     """)
-    choicegetsploit = raw_input(" Do You Want To Download Getsploit? (Y/N) : ")
+    choicegetsploit = raw_input(" Apakah Anda Ingin Mengunduh? Getsploit? (Y/N) : ")
     if choicegetsploit in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/vulnersCom/getsploit.git")
     elif choicegetsploit in no:
@@ -2378,7 +2422,7 @@ def findsploit():
     print ("""
     Find exploits in local and online databases instantly. https://crowdshield.com
     """)
-    choicefindsploit = raw_input(" Do You Want To Download Findsploit? (Y/N) : ")
+    choicefindsploit = raw_input(" Apakah Anda Ingin Mengunduh? Findsploit? (Y/N) : ")
     if choicefindsploit in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/1N3/Findsploit.git")
     elif choicefindsploit in no:
@@ -2397,7 +2441,7 @@ def bfac():
     BFAC (Backup File Artifacts Checker): An automated tool that checks for backup artifacts
     that may disclose the web-application's source code.
     """)
-    choicebfac = raw_input(" Do You Want To Download BFAC? (Y/N) : ")
+    choicebfac = raw_input(" Apakah Anda Ingin Mengunduh? BFAC? (Y/N) : ")
     if choicebfac in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/mazen160/bfac.git")
     elif choicebfac in no:
@@ -2417,7 +2461,7 @@ def wpscann():
     written for security professionals and blog maintainers to test the security of their sites.
     https://www.wpscan.org
     """)
-    choicewpscann = raw_input(" Do You Want To Download WPScan? (Y/N) : ")
+    choicewpscann = raw_input(" Apakah Anda Ingin Mengunduh? WPScan? (Y/N) : ")
     if choicewpscann in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/wpscanteam/wpscan.git")
     elif choicewpscann in no:
@@ -2436,7 +2480,7 @@ def cmsmap():
     CMSmap is a python open source CMS scanner that automates the process of detecting 
     security flaws of the most popular CMSs.
     """)
-    choicecmsmap = raw_input(" Do You Want To Download CMSmap? (Y/N) : ")
+    choicecmsmap = raw_input(" Apakah Anda Ingin Mengunduh? CMSmap? (Y/N) : ")
     if choicecmsmap in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/Dionach/CMSmap.git")
     elif choicecmsmap in no:
@@ -2455,7 +2499,7 @@ def joomscan():
     OWASP Joomla Vulnerability Scanner Project.
     https://www.owasp.org/index.php/Category:OWASP_Joomla_Vulnerability_Scanner_Project
     """)
-    choicejoomscan = raw_input(" Do You Want To Download Joomscan? (Y/N) : ")
+    choicejoomscan = raw_input(" Apakah Anda Ingin Mengunduh? Joomscan? (Y/N) : ")
     if choicejoomscan in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/rezasp/joomscan.git")
     elif choicejoomscan in no:
@@ -2473,7 +2517,7 @@ def jsonwtt():
     print ("""
     A toolkit for testing, tweaking and cracking JSON Web Tokens
     """)
-    choicejsonwtt = raw_input(" Do You Want To Download The JSON Web Token Toolkit? (Y/N) : ")
+    choicejsonwtt = raw_input(" Apakah Anda Ingin Mengunduh? The JSON Web Token Toolkit? (Y/N) : ")
     if choicejsonwtt in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/ticarpi/jwt_tool.git")
     elif choicejsonwtt in no:
@@ -2491,7 +2535,7 @@ def wfuzz():
     print ("""
     Web application fuzzer. http://wfuzz.org
     """)
-    choicewfuzz = raw_input(" Do You Want To Download Wfuzz? (Y/N) : ")
+    choicewfuzz = raw_input(" Apakah Anda Ingin Mengunduh? Wfuzz? (Y/N) : ")
     if choicewfuzz in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/xmendez/wfuzz.git")
     elif choicewfuzz in no:
@@ -2509,7 +2553,7 @@ def patator():
     print ("""
     Patator is a multi-purpose brute-forcer, with a modular design and a flexible usage.
     """)
-    choicepatator = raw_input(" Do You Want To Download Patator? (Y/N) : ")
+    choicepatator = raw_input(" Apakah Anda Ingin Mengunduh? Patator? (Y/N) : ")
     if choicepatator in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/lanjelot/patator.git")
     elif choicepatator in no:
@@ -2528,7 +2572,7 @@ def hydra():
     This tool is a proof of concept code, to give researchers and security consultants
     the possibility to show how easy it would be to gain unauthorized access from remote to a system.
     """)
-    choicehydra = raw_input(" Do You Want To Download Hydra? (Y/N) : ")
+    choicehydra = raw_input(" Apakah Anda Ingin Mengunduh? Hydra? (Y/N) : ")
     if choicehydra in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/vanhauser-thc/thc-hydra.git")
     elif choicehydra in no:
@@ -2546,7 +2590,7 @@ def changeme():
     print ("""
     A default credential scanner.
     """)
-    choicechangeme = raw_input(" Do You Want To Download ChangeMe? (Y/N) : ")
+    choicechangeme = raw_input(" Apakah Anda Ingin Mengunduh? ChangeMe? (Y/N) : ")
     if choicechangeme in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/ztgrace/changeme.git")
     elif choicechangeme in no:
@@ -2602,7 +2646,7 @@ def wafwoof():
     print ("""
     WAFW00F allows one to identify and fingerprint Web Application Firewall (WAF) products protecting a website.
     """)
-    choicewafwoof = raw_input(" Do You Want To Download WAFW00F? (Y/N) : ")
+    choicewafwoof = raw_input(" Apakah Anda Ingin Mengunduh? WAFW00F? (Y/N) : ")
     if choicewafwoof in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/EnableSecurity/wafw00f.git")
     elif choicewafwoof in no:
@@ -2621,7 +2665,7 @@ def assetnote():
     Assetnote is a subdomains supervision tools which allow for real-time notifications 
     about newlly added subdomains.
     """)
-    choiceassetnote = raw_input(" Do You Want To Download AssetNote? (Y/N) : ")
+    choiceassetnote = raw_input(" Apakah Anda Ingin Mengunduh? AssetNote? (Y/N) : ")
     if choiceassetnote in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/infosec-au/assetnote")
     elif choiceassetnote in no:
@@ -2639,7 +2683,7 @@ def jsbeautifier():
     print ("""
     Beautifier for javascript. https://beautifier.io
     """)
-    choicejsbeautifier = raw_input(" Do You Want To Download JavaScript Beautifier? (Y/N) : ")
+    choicejsbeautifier = raw_input(" Apakah Anda Ingin Mengunduh? JavaScript Beautifier? (Y/N) : ")
     if choicejsbeautifier in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/beautify-web/js-beautify.git")
     elif choicejsbeautifier in no:
@@ -2657,7 +2701,7 @@ def linkfinder():
     print ("""
     A python script that finds endpoints in JavaScript files.
     """)
-    choicelinkfinder = raw_input(" Do You Want To Download LinkFinder? (Y/N) : ")
+    choicelinkfinder = raw_input(" Apakah Anda Ingin Mengunduh? LinkFinder? (Y/N) : ")
     if choicelinkfinder in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/GerbenJavado/LinkFinder.git")
     elif choicelinkfinder in no:
@@ -2677,7 +2721,7 @@ def mobsf():
     pen-testing framework capable of performing static analysis, dynamic analysis, malware analysis 
     and web API testing. https://opensecurity.in
     """)
-    choicemobsf = raw_input(" Do You Want To Download Mobile-Security-Framework? (Y/N) : ")
+    choicemobsf = raw_input(" Apakah Anda Ingin Mengunduh? Mobile-Security-Framework? (Y/N) : ")
     if choicemobsf in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/MobSF/Mobile-Security-Framework-MobSF.git")
     elif choicemobsf in no:
@@ -2695,7 +2739,7 @@ def genymotion():
     print ("""
     Android Emulator.
     """)
-    choicegenymotion = raw_input(" Do You Want To Download GenyMotion? (Y/N) : ")
+    choicegenymotion = raw_input(" Apakah Anda Ingin Mengunduh? GenyMotion? (Y/N) : ")
     if choicegenymotion in yes:
         os.system("firefox https://www.genymotion.com/")
     elif choicegenymotion in no:
@@ -2713,7 +2757,7 @@ def apktool():
     print ("""
     A tool for reverse engineering Android apk files.
     """)
-    choiceapktool = raw_input(" Do You Want To Download APKTool? (Y/N) : ")
+    choiceapktool = raw_input(" Apakah Anda Ingin Mengunduh? APKTool? (Y/N) : ")
     if choiceapktool in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/iBotPeaches/apktool.git")
     elif choiceapktool in no:
@@ -2731,7 +2775,7 @@ def dex2jar():
     print ("""
     Tools to work with android .dex and java .class files.
     """)
-    choicedex2jar = raw_input(" Do You Want To Download dex2jar? (Y/N) : ")
+    choicedex2jar = raw_input(" Apakah Anda Ingin Mengunduh? dex2jar? (Y/N) : ")
     if choicedex2jar in yes:
         os.system("firefox https://sourceforge.net/projects/dex2jar/files/dex2jar-2.0.zip/download")
     elif choicedex2jar in no:
@@ -2749,7 +2793,7 @@ def jdgui():
     print ("""
     A standalone graphical utility that displays Java sources from CLASS files.
     """)
-    choicejdgui = raw_input(" Do You Want To Download JD-GUI? (Y/N) : ")
+    choicejdgui = raw_input(" Apakah Anda Ingin Mengunduh? JD-GUI? (Y/N) : ")
     if choicejdgui in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/java-decompiler/jd-gui.git")
     elif choicejdgui in no:
@@ -2769,7 +2813,7 @@ def idb():
     Originally there was a command line version of the tool, but it is no longer 
     under development so you should get the GUI version. http://www.idbtool.com/
     """)
-    choiceidb = raw_input(" Do You Want To Download idb? (Y/N) : ")
+    choiceidb = raw_input(" Apakah Anda Ingin Mengunduh? idb? (Y/N) : ")
     if choiceidb in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/dmayer/idb.git")
     elif choiceidb in no:
@@ -2894,7 +2938,7 @@ def eyewitness():
     EyeWitness is designed to take screenshots of websites, RDP services, and open VNC servers, 
     provide some server header info, and identify default credentials if possible.
     """)
-    choiceeyewitness = raw_input(" Do You Want To Download EyeWitness (Y/N) : ")
+    choiceeyewitness = raw_input(" Apakah Anda Ingin Mengunduh? EyeWitness (Y/N) : ")
     if choiceeyewitness in yes:
         os.system("cd ~/bughunter/repo/ && git clone https://github.com/FortyNorthSecurity/EyeWitness.git")
     elif choiceeyewitness in no:
@@ -2913,7 +2957,7 @@ def httpscreenshot():
     HTTPScreenshot is a tool for grabbing screenshots and HTML of large numbers of websites.
     The goal is for it to be both thorough and fast which can sometimes oppose each other.
     """)
-    choicehttpscreenshot = raw_input(" Do You Want To Download HTTPScreenshot (Y/N) : ")
+    choicehttpscreenshot = raw_input(" Apakah Anda Ingin Mengunduh? HTTPScreenshot (Y/N) : ")
     if choicehttpscreenshot in yes:
         os.system("cd ~/bughunter/repo/ && git clone https://github.com/breenmachine/httpscreenshot.git")
     elif choicehttpscreenshot in no:
@@ -2931,7 +2975,7 @@ def bbtemplates():
     print("""
     A collection of templates for bug bounty reporting, with guides on how to write and fill out.
     """)
-    choicebbtemplates = raw_input(" Do You Want To Download Bug Bounty Templates (Y/N) : ")
+    choicebbtemplates = raw_input(" Apakah Anda Ingin Mengunduh? Bug Bounty Templates (Y/N) : ")
     if choicebbtemplates in yes:
         os.system("cd ~/bughunter/repo/ && git clone https://github.com/ZephrFish/BugBountyTemplates.git")
     elif choicebbtemplates in no:
@@ -2952,7 +2996,7 @@ def gentemplates():
     saved temporarily in local storage. PHP is only needed to generate the list of files in 
     the dropdown of templates.
     """)
-    choicegentemplates = raw_input(" Do You Want To Download Template Generator (Y/N) : ")
+    choicegentemplates = raw_input(" Apakah Anda Ingin Mengunduh? Template Generator (Y/N) : ")
     if choicegentemplates in yes:
         os.system("cd ~/bughunter/expt/ && git clone https://github.com/fransr/template-generator.git")
     elif choicegentemplates in no:
@@ -2985,3 +3029,4 @@ if __name__ == "__main__":
         print(" Finishing Up...\r"),
         os.system("clear")
         time.sleep(0.25)
+
