@@ -1,6 +1,6 @@
 #!/usr/bin/env python2.7 
 # __________                 ___ ___               __
-# \______   \__ __  ____    /   |   \ __ __  _____/  |_  Mood By Venom Reyy
+# \______   \__ __  ____    /   |   \ __ __  _____/  |_  Mood By Akbarbarz
 #  |    |  _/  |  \/ ___\  /    ~    \  |  \/    \   __\/ __ \_  __ \
 #  |    |   \  |  / /_/  > \    Y    /  |  /   |  \  | \  ___/|  | \/
 #  |______  /____/\___  /   \___|_  /|____/|___|  /__|  \___  >__|
@@ -57,7 +57,7 @@ def logo():
 """
 bughunterlogo = """\033[0m
   __________                 ___ ___               __                 
-  \______   \__ __  ____    /   |   \ __ __  _____/  |Mood by Reyy
+  \______   \__ __  ____    /   |   \ __ __  _____/  |Mood by Akbarbarz
    |    |  _/  |  \/ ___\  /    ~    \  |  \/    \   __\/ __ \_  __ \ 
    |    |   \  |  / /_/  > \    Y    /  |  /   |  \  | \  ___/|  | \/ 
    |______  /____/\___  /   \___|_  /|____/|___|  /__|  \___  >__|    
@@ -342,7 +342,7 @@ def exploit():
     print("""
     Eksploitasi | Mood Bahasa Indonesia
 -----------------------------------------------------------------
-    Mood Menu By Venom Reyy
+    Mood Menu By Akbarbarz
 -----------------------------------------------------------------
     [1] XSS Radar 
     [2] XSSHunter
@@ -614,7 +614,7 @@ def sage():
     clearScr()
     print(bughunterlogo)
     print("""
-    Tools by Venom Reyy | Mood Bahasa Indonesia
+    Tools by Akbarbarz | Mood Bahasa Indonesia
     ----------------------------------------------------------------
     
     [1] - Hacktronian - Kumpulan Alat Peretasan untuk Unix
@@ -710,10 +710,10 @@ def about():
     Link Media sosial Kami Bisa Cek Di Bawah
  
     Blog      :  https://venomccybersecurity.blogspot.com/
-    Github    :  https://github.com/Rediawan
-    YouTube   :  Venom Reyy
+    Github    :  https://github.com/Akbarbarz
+    YouTube   :  M.Akbar.B
     Twitter   :  Gk Punya
-    Instagram :  venom_cyber_security
+    Instagram :  _m.akbar_b
 ---------------------------------------------------------------------
 [!] Terima Kasih Telah Menggunakan Tools ini
 ---------------------------------------------------------------------
